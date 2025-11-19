@@ -1,0 +1,28 @@
+/* Make <body> a flex container with vertical stacking */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Optional: ensures full viewport height */
+  margin: 0;
+}
+
+/* Make <main> a flex container with horizontal layout */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* Allocate 2/3 width to <article> */
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Allocate 1/3 width to <aside> */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}

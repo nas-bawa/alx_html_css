@@ -110,3 +110,43 @@ main section:nth-of-type(1) p {
   font-size: 0.9rem;
   color: #ccc;
 }
+
+/* Quote section styling */
+main section:nth-of-type(2) {
+  background-color: #6a0dad; /* Deep purple */
+  color: #fff;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Image container */
+main section:nth-of-type(2) > div:first-child img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Quote and attribution */
+main section:nth-of-type(2) blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+main section:nth-of-type(2) h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+main section:nth-of-type(2) p {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}

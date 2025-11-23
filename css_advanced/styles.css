@@ -228,3 +228,71 @@ main section:nth-of-type(3) > div > div > p:last-child {
   color: #999;
   margin-top: 0.5rem;
 }
+
+/* Membership section */
+main section:nth-of-type(4) {
+  background-color: #121212;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/* Section heading */
+main section:nth-of-type(4) h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+/* Membership cards container */
+main section:nth-of-type(4) > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Individual card */
+main section:nth-of-type(4) > div > div {
+  flex: 1;
+  max-width: 220px;
+  background-color: transparent;
+  padding: 1rem;
+}
+
+/* Icon styling */
+main section:nth-of-type(4) img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Card heading */
+main section:nth-of-type(4) h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+/* Card text */
+main section:nth-of-type(4) p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* CTA button */
+main section:nth-of-type(4) button {
+  background-color: #ff5c5c;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main section:nth-of-type(4) button:hover {
+  background-color: #e04a4a;
+}

@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Helvetica Neue', Poppins, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,'Helvetica Neue', Poppins, sans-serif;
   background-color: #fff;
   color: #333;
 }
@@ -338,4 +338,45 @@ main section:nth-of-type(5) div > div > div > div {
   font-size: 0.9rem;
   line-height: 1.6;
   color: #666;
+}
+
+/* Footer section */
+footer {
+  background-color: #121212;
+  color: #fff;
+  padding: 2rem;
+}
+
+/* Footer layout */
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+/* Logo */
+footer img {
+  width: 60px;
+  height: auto;
+}
+
+/* Social icons */
+footer i {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+footer i:hover {
+  color: #ff5c5c;
+}
+
+/* Copyright */
+footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
 }

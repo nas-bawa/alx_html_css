@@ -1,0 +1,427 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #FF6565; /* Button + link hover color */
+}
+
+
+body {
+  font-family: Source Sans Pro, sans-serif;
+  color: white;
+  background-image: /*url('images/headphones_hero_1.jpg') no-repeat center center/cover;*/
+}
+
+/* Center content with max-width */
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navbar */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/spin-cycle-ot');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --max-width: 1000px;
+  --primary-color: #FF6565;
+  --font-main: 'Source Sans Pro', sans-serif;
+  --font-logo: 'Spin Cycle OT', sans-serif;
+}
+
+/* Navigation container */
+.nav-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 1.5rem 0;
+  font-family: var(--font-main);
+}
+
+.nav-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-logo);
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: var(--primary-color);
+}
+
+/* Mobile version */
+@media screen and (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+  }
+}
+
+
+/* Hero Section */
+.hero {
+  background-image: url("images/headphones_hero_1.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem; /* space for nav */
+  font-family: var(--font-main);
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+  opacity: 0.9;
+}
+
+.hero p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.services-section {
+  background-color: #fff;
+  color: #333;
+  padding: 4rem 1rem;
+  font-family: var(--font-main);
+}
+
+.services-section .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.services-section .section-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 3.5rem; /* bigger icon */
+  color: var(--primary-color); /* same color as button */
+  margin-bottom: 1rem;
+}
+
+
+.feature-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* Mobile version */
+@media screen and (max-width: 480px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/*Our results section*/
+.results-section {
+  background-image: url("images/headphones_hero_2.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 6rem 1rem;
+  text-align: center;
+  font-family: var(--font-main);
+}
+
+.results-section .section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.results-section .section-intro {
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metric-icon {
+  width: 100px; /* adjust size to match design */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.metric-text h4 {
+  font-size: 1.5rem;
+  color: var(--primary-color); /* same red as button */
+  margin-bottom: 0.5rem;
+}
+
+.metric-text p {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* Mobile version */
+@media screen and (max-width: 480px) {
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/*Contact Us Section*/
+.contact-section {
+  background-color: #fff;
+  color: #333;
+  padding: 4rem 1rem;
+  font-family: var(--font-main);
+  text-align: center;
+}
+
+.contact-section .section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.cta-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+  opacity: 0.9;
+}
+
+/* Mobile tweaks */
+@media screen and (max-width: 480px) {
+  .contact-form {
+    padding: 0 1rem;
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+}
+
+/*Footer Section*/
+.site-footer {
+  background-color: #071629;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-family: var(--font-main);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 30px;
+}
+
+.footer-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 35px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Mobile tweaks */
+@media screen and (max-width: 480px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-left {
+    justify-content: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+}
+
